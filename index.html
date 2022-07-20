@@ -13,6 +13,13 @@
     />
 
     <title>Frontend Mentor | Ping coming soon page</title>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/93db54b4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,9 +28,81 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body>
+    <div class="page">
+      <main class="page__inner">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <img src="images/logo.svg" alt="logo.svg" />
+            </div>
+            <div class="header__heading">
+              <h1>We are launching <span>soon!</span></h1>
+              <h4>Subscribe and get notified</h4>
+            </div>
+          </div>
+        </header>
+        <section class="register__form">
+          <div class="form__wrapper">
+            <form class="form">
+              <div class="form__group">
+                <input
+                  class="form__input"
+                  placeholder="Your email address..."
+                  type="text"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="form__group">
+                <button
+                  class="form__button"
+                  type="submit"
+                  id="button"
+                >
+                  Notify Me
+                </button>
+              </div>
+            </form>
+            <div class="form__image">
+              <img
+                src="images/illustration-dashboard.png"
+                alt="dashboard.png"
+              />
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__wrapper">
+            <nav class="footer__social-links">
+              <ul>
+                <li class="footer__social-link-item">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__social-link-item">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__copyright">
+              <p>
+                Me &copy; Copyright Ping. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
     <!-- We are launching soon! Subscribe and get notified Notify Me &copy;
     Copyright Ping. All rights reserved. -->
   </body>
