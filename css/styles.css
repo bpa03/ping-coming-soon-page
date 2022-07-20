@@ -80,6 +80,11 @@ ul {
   text-align: center;
   font-size: 1.25rem;
 }
+@media only screen and (min-width: 768px) {
+  .header__heading h1 {
+    font-size: 1.7rem;
+  }
+}
 
 .header__heading h1 span {
   font-weight: bold;
@@ -93,6 +98,11 @@ ul {
   text-align: center;
   margin-top: 1rem;
 }
+@media only screen and (min-width: 768px) {
+  .header__heading h4 {
+    font-size: 0.8rem;
+  }
+}
 
 .register__form {
   margin-top: 2.2rem;
@@ -102,7 +112,7 @@ ul {
   display: grid;
   justify-content: space-between;
   grid-template-columns: 100%;
-  row-gap: 1rem;
+  row-gap: 0.5rem;
 }
 @media only screen and (min-width: 500px) {
   .form {
@@ -116,11 +126,26 @@ ul {
   border-radius: 2rem;
   padding: 0.7rem 0;
   padding-inline: 1.5rem 1rem;
+  transition: border 0.3s;
   font-family: "Libre Franklin", sans-serif;
 }
 .form__group input::placeholder {
   font-weight: lighter;
   color: hsl(0deg, 0%, 59%);
+}
+
+.form__input-status_error {
+  border: 1px solid hsl(354deg, 100%, 66%) !important;
+}
+
+.form__input-status {
+  color: hsl(354deg, 100%, 66%);
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 0.65rem;
+  margin-left: 1.6rem;
+  transition: opacity 0.3s;
+  opacity: 0;
 }
 
 .form__group button {
@@ -140,11 +165,11 @@ ul {
 .form__image img {
   vertical-align: top;
   max-width: 100%;
-  margin-top: 3.3rem;
+  margin-top: 3rem;
 }
 
 .footer {
-  padding: 5.5rem 0 3rem 0;
+  padding: 5rem 0 3rem 0;
 }
 
 .footer__social-links ul {

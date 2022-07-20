@@ -5,7 +5,7 @@
   display: grid
   justify-content: space-between
   grid-template-columns: 100%
-  row-gap: 1rem
+  row-gap: .5rem
 
   @media only screen and (min-width: 500px)
     grid-template-columns: 73% 24.999%
@@ -16,11 +16,24 @@
   border-radius: 2rem
   padding: .7rem 0
   padding-inline: 1.5rem 1rem
+  transition: border .3s
   font-family: $font
 
   &::placeholder
     font-weight: lighter
     color: $gray
+
+.form__input-status_error
+  border: 1px solid $red-color !important
+
+.form__input-status
+  color: $red-color
+  font-weight: lighter
+  font-style: italic
+  font-size: .65rem
+  margin-left: 1.6rem
+  transition: opacity .3s
+  opacity: 0
 
 .form__group button
   cursor: pointer
@@ -38,4 +51,4 @@
 .form__image img
   vertical-align: top
   max-width: 100%
-  margin-top: 3.3rem
+  margin-top: 3rem
